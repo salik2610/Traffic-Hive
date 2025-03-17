@@ -1,0 +1,42 @@
+.ambient-spheres {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sphere {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  left: var(--x);
+  top: var(--y);
+  border-radius: 50%;
+  background: var(--color);
+  filter: blur(var(--blur));
+  opacity: 0.3;
+  transition: background-color 2s ease, width 0.5s ease, height 0.5s ease;
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  will-change: transform, width, height; /* Optimize performance */
+}
+
+/* Add animation for extra smoothness */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.sphere {
+  animation: float 10s infinite ease-in-out;
+} 

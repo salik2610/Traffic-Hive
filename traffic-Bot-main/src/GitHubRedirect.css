@@ -1,0 +1,11 @@
+.github-redirect {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .github-logo {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+  }
+  

@@ -1,0 +1,149 @@
+.notifications-wrapper {
+  position: relative;
+}
+
+.delhi-updates-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.delhi-updates-btn:hover {
+  background: #45a049;
+}
+
+.notification-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 380px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.notification-content {
+  padding: 20px;
+  color: #000;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notification-header h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.update-card {
+  background: #f5f7f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.aqi-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.aqi-value {
+  color: #ff3b30;
+  font-weight: 600;
+}
+
+.local-aqi {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+
+.local-aqi p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.aqi-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.aqi-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.aqi-number {
+  color: #ff3b30;
+}
+
+.vehicle-rule, .roadworks {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #000;
+}
+
+.roadworks-list {
+  margin-top: 8px;
+  margin-left: 24px;
+}
+
+.roadworks-list p {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.location-icon, .car-icon, .construction-icon, .wind-icon {
+  font-size: 16px;
+}
+
+.road-updates {
+  color: #1a1a1a;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.update-timestamp {
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.error-notification {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+} 

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <!-- Hexagonal icon -->
+  <path d="M50 25 L75 10 L100 25 L100 55 L75 70 L50 55 Z" 
+        fill="none" 
+        stroke="#FFB800" 
+        stroke-width="3"/>
+  
+  <!-- Traffic signal dots -->
+  <circle cx="75" cy="25" r="3" fill="#FF4444"/>
+  <circle cx="75" cy="40" r="3" fill="#FFFF00"/>
+  <circle cx="75" cy="55" r="3" fill="#44FF44"/>
+  
+  <!-- Company name -->
+  <text x="120" y="50" 
+        font-family="Arial, sans-serif" 
+        font-size="32" 
+        font-weight="bold" 
+        fill="#FFB800">TRAFFIC HIVE</text>
+</svg> 

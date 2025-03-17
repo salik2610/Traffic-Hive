@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: traffichive
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0 

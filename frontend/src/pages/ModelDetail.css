@@ -1,0 +1,122 @@
+.model-detail-page {
+  min-height: 100vh;
+  background: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.model-detail-content {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.model-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.model-detail-text {
+  padding-right: 2rem;
+}
+
+.model-detail-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.main-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.try-now-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.try-now-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.model-detail-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.detail-image:hover {
+  transform: scale(1.02);
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.additional-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+  .model-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .model-detail-text {
+    padding-right: 0;
+  }
+
+  .model-detail-text h1 {
+    font-size: 2.5rem;
+  }
+} 

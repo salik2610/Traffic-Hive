@@ -1,0 +1,104 @@
+.glimpses-section {
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 4rem;
+}
+
+.glimpses-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.glimpses-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 0 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  padding-bottom: 50px;
+}
+
+.glimpses-track {
+  display: flex;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  height: calc(100% - 60px);
+}
+
+.glimpse-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 100%;
+}
+
+.glimpse-slide img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.glimpses-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  height: 60px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .glimpses-section {
+    padding: 3rem 1rem;
+  }
+
+  .glimpses-section h2 {
+    font-size: 2rem;
+  }
+
+  .glimpses-container {
+    padding: 0 1rem;
+  }
+
+  .glimpses-track {
+    height: 50vh;
+  }
+
+  .glimpse-slide {
+    padding: 1rem;
+  }
+} 
