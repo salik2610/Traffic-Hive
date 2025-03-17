@@ -1,0 +1,109 @@
+#root {
+  width: 100%;
+  margin: 0 ;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  color: #fff;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  color: #fff;
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  color: #fff;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Additional styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+.location-name {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Additional styles for headings */
+h3 {
+  color: #000;
+}
+
+.vehicle-type-name {
+  color: #000;
+  font-weight: bold;
+}
+
+.duration-text {
+  color: #000;
+  font-weight: bold;
+}
+
+.payment-summary {
+  color: #000;
+}
+
+/* Additional styles for headings */
+h4 {
+  color: #000;
+}
+
+.confirmation-text {
+  color: #000;
+}
+
+/* Additional styles for headings */
+h2 {
+  color: #000;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale {
+  animation: scale 0.3s ease-in-out;
+}
