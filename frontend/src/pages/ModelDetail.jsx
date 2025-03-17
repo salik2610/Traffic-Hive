@@ -39,7 +39,7 @@ const modelDetails = {
     description: 'Discover the ultimate companion for safe and informed driving! Traffic Bot by Traffic Hive is here to revolutionize the way you navigate traffic rules and regulations. Whether you\'re a new driver eager to stay compliant or a seasoned commuter looking for quick answers, Traffic Bot has everything you need.',
     subtitle: 'Stay informed. Drive responsibly. Join the road safety revolution with Traffic Bot by Traffic Hive!',
     buttonText: 'CHAT NOW',
-    tryNowLink: 'https://traffic-bot394m.vercel.app/',
+    tryNowLink: 'https://traffic-bot-six.vercel.app',
     image: trafficChatbot
   },
   'intelligent-parking': {
